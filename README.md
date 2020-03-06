@@ -9,7 +9,12 @@ This project aim to show how build a simple app using ReactJS and Python Flask w
 
 The time is an API Request, and click button only an event.
 
+## Getting Started
 
-### `docker-compose up --build -d `
+`git clone https://github.com/gnm3000/react-flask-app-docker-compose-example project`
 
-### `http://localhost:3000`
+`cd project`
+
+`docker-compose up --build`
+
+Visit http://localhost:3000
