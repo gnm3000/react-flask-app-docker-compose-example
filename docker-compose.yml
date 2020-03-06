@@ -1,0 +1,22 @@
+version: "3.7"
+
+services:
+    api:
+        build: ./api
+        command: python -u api.py
+        volumes:
+            - ./api:/app
+        ports:
+            - "5000:5000"
+        environment: 
+            - FLASK_APP=api.py
+            - FLASK_ENV=development
+            
+
+
+    web:
+        build: .
+        
+        ports:
+            - "3000:80"
+        
